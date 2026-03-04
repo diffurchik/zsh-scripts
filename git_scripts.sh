@@ -142,13 +142,11 @@ function compush(){
 }
 
 function list(){
-
     case "$1" in
-        '') echo "Please, input ${BLUE}'spec'${NC}, ${BLUE}'git'${NC}, ${BLUE}'else'${NC} or ${BLUE}'all'${NC} parameter" ;;
-        spec) echo "specswitch \ndockertest \nscreenshot \ngetallure \ndockallure" ;;
-        git) echo "switch \nfindGeneralBranch \nupdate \npush \nnewbranch \ncompush \nswitchbranch";;
-        else) echo "killp \ntogif \ngetclienturl" ;;
-        all) echo "specswitch \ndockertest \nscreenshot \ngetallure \ndockallure \nswitch \nfindGeneralBranch \nupdate \npush \nnewbranch \ncompush \nkillp \ntogif";;
+        '') echo "Please, input ${BLUE}'git'${NC}, ${BLUE}'else'${NC} or ${BLUE}'all'${NC} parameter" ;;
+        git) echo "switch \ngetGeneralBranch \nupdate \npush \nnewbranch \ncompush \nswitchbranch \nrevert" ;;
+        else) echo "killp \ntogif \ngetclienturl \ngetgitbranchurl" ;;
+        all) echo "screenshot \nswitch \ngetGeneralBranch \nupdate \npush \nnewbranch \ncompush \nswitchbranch \nrevert \nkillp \ntogif \ngetclienturl \ngetgitbranchurl" ;;
     esac
 }
 
